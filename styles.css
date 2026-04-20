@@ -1,0 +1,139 @@
+/* styles.css */
+#ping-filter-container {
+    background-color: #232527;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-family: 'HCo Gotham SSm', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.ping-filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.ping-filter-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ping-filter-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.ping-filter-input {
+    background: #111214;
+    border: 1px solid #3b3f44;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 14px;
+}
+
+.ping-filter-btn {
+    background-color: #00b06f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.ping-filter-btn:hover {
+    background-color: #00905d;
+}
+
+.ping-filter-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+#ping-filtered-servers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.ping-filter-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.ping-filter-pagination span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ping-server-card {
+    background-color: #393b3d;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid transparent;
+}
+
+.ping-server-card.good-ping { border-color: #00b06f; }
+.ping-server-card.medium-ping { border-color: #f68802; }
+.ping-server-card.bad-ping { border-color: #e2231a; }
+
+.ping-server-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.ping-server-join {
+    background-color: #fff;
+    color: #393b3d;
+    border: 1px solid #bdbebe;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.ping-server-join:hover {
+    background-color: #e3e3e3;
+}
+
+.ping-status-text {
+    font-size: 14px;
+    color: #bdbebe;
+    margin-top: 10px;
+}
+
+.ping-avatars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+.ping-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #232527;
+}
+.ping-avatar-placeholder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #444;
+}

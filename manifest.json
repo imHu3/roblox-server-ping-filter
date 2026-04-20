@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Roblox Server Ping Filter",
+  "version": "1.0",
+  "description": "Find the fastest Roblox servers!",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.roblox.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.roblox.com/games/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
