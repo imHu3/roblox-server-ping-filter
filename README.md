@@ -1,6 +1,6 @@
 # Roblox Server Ping Filter
 
-Find the fastest Roblox servers! ⚡ This small Chrome extension adds a ping filter straight to the Roblox site so you can find the lowest latency servers instantly without guessing.
+It simply finds the best servers.
 
 ## Features
 **Sort by Ping**: Find servers with the lowest latency instantly.
